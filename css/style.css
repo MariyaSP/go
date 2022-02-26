@@ -1,0 +1,289 @@
+@import url("question.css");
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1B1A1B;
+    margin-top: 146px;
+}
+
+.banner__header {
+    font-family: 'Arial Black';
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+}
+
+.banner__header::after{
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    background: url('../img/man.png') bottom right no-repeat;
+    width: 675px;
+    height: 823px; 
+}
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+}
+
+h3{
+    
+    padding-left: 100px;
+    font-size: 28px;
+    
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hall__list, .contacts__social-icon, .contacts__item, .reviews__list{
+list-style: none;
+}
+
+.hall__list-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hall__item{
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 135px 0px 134px 0px;
+    margin: 0 20px 20px 0;
+}
+
+.hall__item:nth-child(2n){
+    margin-right: 0;
+}
+
+.hall__item:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+.hall__item-80vibes{
+    background: url('../img/80vibes.jpg') no-repeat center;
+}
+
+.hall__item-starwars{
+    background: url('../img/starwars.jpg') no-repeat center;
+}
+
+.hall__item-wildwest{
+    background: url('../img/wildwest.jpg') no-repeat center;
+}
+
+.hall__item-neonstyle{
+    background: url('../img/neonstyle.jpg') no-repeat center;
+}
+
+.hall__title{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__photo{
+    background: url('../img/photos.jpg') no-repeat center;
+    width: 600px;
+    height: 596px;
+    background-size: contain;
+}
+
+.about__body-text{
+    
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.about__author{
+    margin-top: 48px;
+    width: 500px;
+    height: 325px;
+}
+
+.about__citat{
+    display: flex;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about__citat p{
+    font-size: 44px;
+    padding-left: 9px;
+    margin-bottom: 38px;
+}
+.about__citat::before {
+    color: #6C0287;
+    content: '\201c';
+    top: -16px;
+    left: 6px;
+    line-height: 1;
+    font-weight: bold;
+
+}
+
+.about__citat::after {
+    color: #6C0287;
+    content: '\201d';
+    bottom: 6px;
+    right: 125px;
+    line-height: 1;
+    font-weight: bold;
+    padding-left: 8px;
+    position: absolute;
+}
+
+span{
+    font-weight: 900;
+    font-size: 44px;
+    color: #6C0287;
+}
+
+.about__boss{
+    margin-left: 111px;
+    width: 389px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__boss p{
+    padding-left: 30px;
+}
+
+.about__body{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contacts__item li {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.contacts__item li:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.contacts__item p{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contacts__item-email{
+    margin-right: 28px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/icons/envelope.svg') no-repeat center;
+}
+.contacts__item-location{
+    margin-right: 28px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/icons/location.svg') no-repeat center;
+}
+.contacts__item-phone{
+    margin-right: 28px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/icons/bx_bxs-phone-call.svg') no-repeat center;
+}
+
+
+.contacts__social-icon{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contacts__social-icon-facebook{
+    background: url('/img/icons/Vector\(1\).svg') no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+.contacts__social-icon-inst{
+    background: url('/img/icons/Vector\(3\).svg') no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+.contacts__social-icon-telega{
+    background: url('/img/icons/Vector.svg') no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+.contacts__social-icon-vk{
+    background: url('/img/icons/Vector\(2\).svg') no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+.banner__container {
+    /* background: url('../img/man.png') no-repeat bottom right; */
+    height: 823px; 
+}
+
+.reviews__container{
+    margin: 0 auto;
+    width: 980px;
+}
+
+.reviews__list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.reviews__list li:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.reviews__list figure{
+    margin-right: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__list figcaption{
+    align-self: center;
+}
+
+.reviews__list img{
+max-width: 280px;
+margin-bottom: 11px;
+}
+

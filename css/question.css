@@ -1,0 +1,43 @@
+.question {
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    position: relative;
+
+}
+
+.question:nth-child(even) {
+    background-color: #440F51;
+    color: #fff;
+
+}
+
+.question:nth-child(even):after {
+    content: url(../img/icons/open.svg);
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    position: absolute;
+    right: 70px;
+    top: calc(50% - 23px);
+
+}
+
+.question:nth-child(odd):after {
+    content: url(../img/icons/open-purple.svg);
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    position: absolute;
+    right: 70px;
+    top: calc(50% - 23px);
+
+}
+
+.question:nth-last-child(1){
+    margin-bottom: 0;
+}
