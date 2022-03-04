@@ -1,0 +1,43 @@
+
+.we-have__galery{
+    width: 100%;
+}
+
+.we-have__item{
+    display: block;
+    flex-basis: 380px;
+    height: 228px;
+    padding: 166px 40px 66px 40px;
+
+
+}
+.we-have__item-1{
+background: url('../img/we_have/Rectangle\ 29.jpg');
+}
+.we-have__item-2{
+background: url('../img/we_have/Rectangle\ 30.jpg');
+}
+.we-have__item-3{
+background: url('../img/we_have/Rectangle\ 31.jpg');
+}
+.we-have__item-4{
+background: url('../img/we_have/Rectangle\ 32.jpg');
+}
+.we-have__item-5{
+background: url('../img/we_have/Rectangle\ 33.jpg');
+}
+.we-have__item-6{
+background: url('../img/we_have/Rectangle\ 34.jpg');
+}
+.we-have__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 20px;
+}
+
+.we-have__text{
+    width: 300px;
+    font-weight: bold;
+    line-height: 28px;
+}

@@ -1,4 +1,7 @@
 @import url("question.css");
+@import url("wehave.css");
+@import url("nav.css");
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -9,7 +12,6 @@
 
 body {
     background-color: #1B1A1B;
-    margin-top: 146px;
 }
 
 .banner__header {
@@ -30,12 +32,16 @@ body {
     height: 823px; 
 }
 h2{
+    display: block;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 54px;
+    width: 980px;
+    
 }
 
 h3{
@@ -182,6 +188,10 @@ span{
 .about__body{
     display: flex;
     justify-content: space-between;
+}
+
+.contacts{
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 .contacts__item{
     display: flex;
