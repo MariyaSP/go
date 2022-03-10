@@ -32,7 +32,7 @@ h2{
 
 
 section{
-    margin-bottom: 100px;
+    padding: 50px 0;
 }
 
 
@@ -174,7 +174,7 @@ span{
 .contacts{
     background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
     margin: 0;
-    padding-bottom: 100px;
+
 }
 .contacts__item{
     display: flex;
@@ -242,6 +242,35 @@ span{
     background: url('/img/icons/Vector\(2\).svg') no-repeat center;
     width: 50px;
     height: 50px;
+}
+
+
+.contacts__text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 146px;
+}
+
+.contacts__map{
+    display: block;
+    width: 680px;
+    height: 274px;
+    background: url('../img/map.jpg');
+}
+
+.contacts__copy{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contacts__author{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
 }
 .banner__container {
     /* background: url('../img/man.png') no-repeat bottom right; */
