@@ -1,0 +1,197 @@
+.booking__form-hall legend{
+    margin: 0 auto;
+    width: 980px;
+    text-align: center;
+}
+
+.booking__form-booking legend{
+    margin: 0 auto;
+    width: 980px;
+    text-align: center;
+}
+.booking{
+    background-color: #440F51;
+}
+
+.booking{
+    margin-bottom: 40px;
+}
+
+.booking .container{
+    padding: 80px 0px;
+}
+
+.booking__form{
+    margin: 0 auto;
+}
+
+.booking__form-hall{
+    display: flex;
+    gap: 60px;
+}
+
+.booking__form fieldset{
+    border: 0;
+    margin-bottom: 60px;
+
+}
+
+.booking__form legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.booking__form-radiobtn{
+	display: flex;
+    gap: 60px;
+
+}
+
+.booking__form-radiobtn input[type=radio] {
+	display: none;
+
+
+}
+
+.booking__form-radiobtn label {
+    width: 250px;
+	display: inline-block;
+	cursor: pointer;
+	padding: 7px 15px;
+	line-height: 34px;
+	border: 1px solid #fff;
+    background: #fff;
+	border-radius: 8px;
+	user-select: none;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Checked */
+.booking__form-radiobtn input[type=radio]:checked + label {
+	border: 1px solid #fff;
+}
+
+/* Hover */
+.booking__form-radiobtn label:hover {
+	color: #666;
+}
+/* Disabled */
+.booking__form-radiobtn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+
+.booking__form-choose{
+    display:flex;
+    margin: 0 auto;
+    width: 1080px;
+    gap: 100px;
+    
+}
+
+.booking__form-choose fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+
+}
+
+
+
+.booking__form-list-items{
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+.booking__form-list-items:last-child{
+    margin-bottom: 0;
+}
+
+.booking__form-list-items input{
+    width: 27px;
+    height: 27px;
+    margin-right: 12px;
+}
+
+
+.booking__form-choose legend{
+    text-align: left;
+}
+
+
+.booking__form-book{
+    display:flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap:36px 32px;
+}
+
+.booking__form-booking{
+    width: 980px;
+    display: flex;
+    margin: 0 auto;
+
+    gap: 40px;
+}
+
+.booking__form-book input, select{
+height: 52px;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color:#000000;
+background-color: #fff;
+padding: 12px;
+}
+
+.booking__form-book select, input{
+    width: 300px;
+}
+.booking__form-book input[type=date], input[type=time]{
+    margin-top: 22px;
+    width: 134px;
+}
+
+.booking__form-book label{
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px; 
+}
+
+.group{
+    gap:14px;
+}
+
+.booking__form-button{
+    margin: 0 auto;
+display: flex;
+width: 980px;
+justify-content: flex-end;
+
+}
+
+.booking__form-button button{
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color:#6C0287;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 16px 50px;
+    
+    
+    
+}
