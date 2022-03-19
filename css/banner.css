@@ -87,6 +87,17 @@
     border: 0; 
 }
 
+.banner__promo-btn:hover{
+    background: #840AA3;
+}
+.banner__promo-btn:focus{
+    background: #640AA3;;
+}
+
+.banner__promo-btn:active{
+    background: #840AA3;
+}
+
 .banner__promo-btn::after{
     content: "";
     display: block;
@@ -103,7 +114,21 @@
 }
 
 .banner__promo-down{
+    background: url("../img/icons/down.png") no-repeat center;
+    width: 97px;
+    height: 97px;
     position: absolute;
     left: 50%;
-    
+    bottom: 90px;
+}
+
+.banner__promo-down:hover{
+    background: url("../img/icons/down-hover.svg") no-repeat center;
+}
+
+.banner__promo-down:focus{
+    background: url("../img/icons/down-focus.svg") no-repeat center;
+}
+.banner__promo-down:active{
+    background: url("../img/icons/down-active.svg") no-repeat center;
 }

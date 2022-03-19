@@ -220,28 +220,28 @@ span{
     width: 280px;
     display: flex;
     justify-content: space-between;
-    
 }
 
-.contacts__social-icon-facebook{
-    background: url('/img/icons/Vector\(1\).svg') no-repeat center;
+.contacts__social-icon-soc a{
     width: 50px;
     height: 50px;
+    display: inline-block;
 }
-.contacts__social-icon-inst{
-    background: url('/img/icons/Vector\(3\).svg') no-repeat center;
-    width: 50px;
-    height: 50px;
+
+.contacts__social-icon-item{
+    fill: white;
+
 }
-.contacts__social-icon-telega{
-    background: url('/img/icons/Vector.svg') no-repeat center;
-    width: 50px;
-    height: 50px;
+
+.contacts__social-icon-item:hover{
+    fill: #EADEED;
 }
-.contacts__social-icon-vk{
-    background: url('/img/icons/Vector\(2\).svg') no-repeat center;
-    width: 50px;
-    height: 50px;
+.contacts__social-icon-item:focus{
+    fill: #EADEED;
+    border: 3px solid #CD06FF;
+}
+.contacts__social-icon-item:active{
+    fill: #CD06FF;
 }
 
 

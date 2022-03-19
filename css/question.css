@@ -27,6 +27,16 @@
 
 }
 
+.question:nth-child(even):hover:after{
+    content: url(../img/icons/open-hover.svg);
+
+}
+
+.question:nth-child(even):active:after{
+    content: url(../img/icons/open-close.svg);
+
+}
+
 .question:nth-child(odd):after {
     content: url(../img/icons/open-purple.svg);
     width: 46px;
@@ -36,6 +46,14 @@
     right: 70px;
     top: calc(50% - 23px);
 
+}
+
+.question:nth-child(odd):hover:after {
+    content: url(../img/icons/open-p-hover.svg);
+}
+
+.question:nth-child(odd):active:after {
+    content: url(../img/icons/p-close.svg);
 }
 
 .question:nth-last-child(1){
