@@ -16,11 +16,11 @@
         <nav>
             <img src="img/logo.svg" alt="">
             <ul>
-                <li class="nav__item">залы</li>
-                <li class="nav__item">о нас</li>
-                <li class="nav__item">бронь</li>
-                <li class="nav__item">отзывы</li>
-                <li class="nav__item">контакты</li>
+                <li><a class="nav__item" href="#hall"> залы </a></li>
+                <li><a class="nav__item" href="#about"> о нас </a></li>
+                <li><a class="nav__item" href="#booking"> бронь </a></li>
+                <li><a class="nav__item" href="#reviews"> отзывы </a></li>
+                <li><a class="nav__item" href="#conacts"> контакты </a></li>
             </ul>
             <button>заказать звонок</button>
         </nav>
@@ -46,6 +46,7 @@
 
         <section class="we-have">
             <div class="container">
+                <a id="about"></a>
                 <h2>У нас есть все для классного 
                     отдыха с друзьями!</h2>
                 <div class="we-have__galery">
@@ -76,7 +77,10 @@
 
         <section class="hall">
             <div class="container">
-                <h2>наши залы</h2>
+                <a id="hall"> 
+                    <h2>наши залы</h2>
+                </a>
+                
                 <div >
                     <ul class="hall__list hall__list-block">
                         <li class="hall__item hall__item-80vibes">
@@ -98,6 +102,7 @@
 
         <section class="booking">
             <div class="container">
+                <a id="booking"></a>
                 <h2>Забронировать зал просто</h2>
                 <form class="booking__form"
                     action="https://jsonplaceholder.typicode.com/posts"
@@ -232,8 +237,9 @@
 
         <section class="about">
             <div class="container">
-
-                <h2>о нас</h2>
+                <a id="about">
+                    <h2>о нас</h2>
+                </a>
                 <div class="about__body">
                     <div class="about__photo"> </div>
 
@@ -257,7 +263,10 @@
         <section class="reviews">
             <div class="container reviews__container">
                 <ul class="reviews__list">
-                    <h2>отзывы посетителей</h2>
+                    <a id="reviews">
+                        <h2>отзывы посетителей</h2>
+                    </a>
+                    
                     <li>
                         <figure>
                             <img src="img/reviews/samoilov.png" alt="Максим Самойлов" />
@@ -286,6 +295,7 @@
 
         <section class="questions">
             <div class="container">
+                
                 <h2>Частые вопросы</h2>
                 <ul>
                     <li class="question">Вопрос 1</li>
@@ -299,7 +309,9 @@
 
         <section class="contacts">
             <div class="container">
-                <h2>контакты</h2>
+                <a id="conacts">
+                    <h2>контакты</h2>
+                </a>
                 <div class="contacts__text">
                     <div>
                         <ul class="contacts__item">
