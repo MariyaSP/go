@@ -12,10 +12,14 @@ nav ul {
     gap: 40px;
 }
 
-nav ul li {
+.nav__item {
     font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
+}
+
+.nav__item:hover{
+    color: #CD06FF;
 }
 
 nav button{
