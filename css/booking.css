@@ -78,6 +78,7 @@
     border: 3px solid #EADEED;
 }
 
+
 /* Hover */
 .booking__form-radiobtn label:hover {
 	background: #EADEED;
@@ -124,10 +125,37 @@
 }
 
 .booking__form-list-items input{
-    width: 27px;
-    height: 27px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 33px;
+    height: 33px;
     margin-right: 12px;
 }
+
+.booking__form-list-items input[type=radio]{
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.booking__form-list-items input[type=checkbox]{
+    outline: none;
+    background-color: #fff;
+    
+
+}
+
+.booking__form-list-items input:active::after{
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border-radius: 0;
+    border: 1px solid #CD06FF;
+}
+
+
 
 
 .booking__form-choose legend{

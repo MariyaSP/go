@@ -234,20 +234,18 @@ span{
 
 }
 
+
+.contacts__social-icon-item:hover{
+    fill: #EADEED;
+
+}
+
 .contacts__social-icon-item:focus{
+    outline: none;
     fill: #EADEED;
     border: 1px solid #CD06FF;
 }
-/* .contacts__social-icon-item:hover:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 54px;
-    height: 54px;
-    fill: #EADEED;
-    border: 1px solid #CD06FF;
-} */
+
 .contacts__social-icon-item:active{
     fill: #CD06FF;
 }

@@ -115,9 +115,10 @@
 
 .banner__promo-down{
     background: url("../img/icons/down.png") no-repeat center;
-    width: 97px;
-    height: 97px;
+    width: 99px;
+    height: 99px;
     position: absolute;
+    outline: none;
     left: 50%;
     bottom: 90px;
 }
