@@ -38,6 +38,10 @@ background: url('../img/we_have/Rectangle\ 33.jpg');
 .we-have__item-6{
 background: url('../img/we_have/Rectangle\ 34.jpg');
 }
+
+.we-have__item-translate{
+    transform: translate(0px, 70px);
+}
 .we-have__list{
     display: flex;
     flex-wrap: wrap;
