@@ -22,11 +22,13 @@ img{
 
 button{
     cursor: pointer; 
+    transition-duration: 2s;
 }
 
 a{
     cursor: inherit;
     text-decoration: none;
+    transition-duration: 2s;
 }
 
 ul{
@@ -38,6 +40,7 @@ ul{
 h1, h2, h3, p, figure, fieldset{
     margin: 0;
 }
+
 
 /* для того чтобы скрывать заголовки блоков */
 .visually-hidden{

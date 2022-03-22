@@ -131,6 +131,7 @@
     width: 33px;
     height: 33px;
     margin-right: 12px;
+    transition-duration: 1s;
 }
 
 .booking__form-list-items input[type=radio]{
@@ -229,6 +230,7 @@ justify-content: flex-end;
 }
 
 .booking__form-button button:hover{
+    
     background: #EADEED;
     border: 3px solid #6C0287;  
 }

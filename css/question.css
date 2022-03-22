@@ -7,54 +7,127 @@
     margin-bottom: 20px;
     list-style-type: none;
     position: relative;
+    transition-duration: 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.question > p{
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .question:nth-child(even) {
     background-color: #440F51;
+    
+
+}
+
+.question:nth-child(even) > p{
     color: #fff;
-
 }
 
-.question:nth-child(even):after {
-    content: url(../img/icons/open.svg);
+/* icon */
+.question > span {
     width: 46px;
     height: 46px;
-    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.question > span:before{
+    content: "";
+    width: 20px;
+    height: 1px;
     position: absolute;
-    right: 70px;
-    top: calc(50% - 23px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-.question:nth-child(even):hover:after{
-    content: url(../img/icons/open-hover.svg);
-
-}
-
-.question:nth-child(even):active:after{
-    content: url(../img/icons/open-close.svg);
-
-}
-
-.question:nth-child(odd):after {
-    content: url(../img/icons/open-purple.svg);
-    width: 46px;
-    height: 46px;
-    display: inline-block;
+.question > span:after{
+    content: "";
+    width: 1px;
+    height: 20px;
     position: absolute;
-    right: 70px;
-    top: calc(50% - 23px);
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.question:nth-child(odd):hover:after {
-    content: url(../img/icons/open-p-hover.svg);
+.question > span:before, .question > span:after{
+    transition: all .4s ease;
+}
+/*  */
+
+/* even */
+.question:nth-child(even) > span {
+    border: 2px solid #fff;
 }
 
-.question:nth-child(odd):active:after {
-    content: url(../img/icons/p-close.svg);
+.question:nth-child(even):hover > span {
+    background: #fff;
 }
+
+.question:nth-child(even) > span:after, .question:nth-child(even) > span:before{
+    background-color: #fff;
+}
+
+.question:nth-child(even):hover > span:after, .question:nth-child(even):hover > span:before{
+    background-color: #6C0287;
+}
+
+.question:nth-child(even):active > span {
+    background: transparent;
+}
+
+.question:nth-child(even):active > span:after{
+    width: 0px;
+}
+
+.question:nth-child(even):active > span:before{
+    background-color: #fff;
+}
+/*  */
+
+/* odd */
+.question:nth-child(odd) > span {
+    border: 2px solid #6C0287;
+}
+
+.question:nth-child(odd):hover > span {
+    background: #6C0287;
+}
+
+.question:nth-child(odd) > span:after, .question:nth-child(odd) > span:before{
+    background-color: #6C0287;
+}
+
+.question:nth-child(odd):hover > span:after, .question:nth-child(odd):hover > span:before{
+    background-color: #fff;
+}
+
+.question:nth-child(odd):active > span {
+    background: transparent;
+}
+
+.question:nth-child(odd):active > span:after{
+    width: 0px;
+}
+
+.question:nth-child(odd):active > span:before{
+    background-color: #6C0287;
+}
+
+
+
+
+
 
 .question:nth-last-child(1){
     margin-bottom: 0;

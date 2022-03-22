@@ -8,8 +8,11 @@
     flex-basis: 380px;
     height: 228px;
     padding: 166px 40px 66px 40px;
+    transition-duration: 0.5s ;
+}
 
-
+.we-have__item:hover{
+    transform: scale(1.1);
 }
 .we-have__item-1{
 background: url('../img/we_have/Rectangle\ 29.jpg');
