@@ -180,16 +180,24 @@ span{
 .contacts__item{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
-.contacts__item li {
+.contacts__item-li {
     display: flex;
     margin-bottom: 11px;
 }
 
 .contacts__item li:nth-last-child(1){
     margin-bottom: 0;
+}
+
+.contacts__item-adress{
+    margin-bottom: 39px;
+}
+
+.contacts__item-adress-width{
+    width: 190px;
 }
 
 .contacts__item p{
