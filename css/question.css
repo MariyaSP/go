@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     list-style-type: none;
     position: relative;
-    transition-duration: 2s;
+    transition-duration: .2s;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@
 }
 
 .question:nth-child(even):hover > span:after, .question:nth-child(even):hover > span:before{
-    background-color: #6C0287;
+    background-color: var(--bright-color);
 }
 
 .question:nth-child(even):active > span {
@@ -97,15 +97,15 @@
 
 /* odd */
 .question:nth-child(odd) > span {
-    border: 2px solid #6C0287;
+    border: 2px solid var(--bright-color);
 }
 
 .question:nth-child(odd):hover > span {
-    background: #6C0287;
+    background: var(--bright-color);
 }
 
 .question:nth-child(odd) > span:after, .question:nth-child(odd) > span:before{
-    background-color: #6C0287;
+    background-color: var(--bright-color);
 }
 
 .question:nth-child(odd):hover > span:after, .question:nth-child(odd):hover > span:before{
@@ -121,7 +121,7 @@
 }
 
 .question:nth-child(odd):active > span:before{
-    background-color: #6C0287;
+    background-color: var(--bright-color);
 }
 
 

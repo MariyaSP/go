@@ -1,4 +1,9 @@
 
+* {
+    transform: none;
+}
+
+
 .we-have__galery{
     width: 100%;
 }
@@ -9,6 +14,7 @@
     height: 228px;
     padding: 166px 40px 66px 40px;
     transition-duration: 0.5s ;
+    
 }
 
 .we-have__item:hover{

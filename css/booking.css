@@ -131,7 +131,7 @@
     width: 33px;
     height: 33px;
     margin-right: 12px;
-    transition-duration: 1s;
+    transition: border 1s;
 }
 
 .booking__form-list-items input[type=radio]{
@@ -147,13 +147,14 @@
 
 }
 
-.booking__form-list-items input:active::after{
+.booking__form-list-items input:checked::after{
     content: "";
     position: absolute;
     width: 33px;
     height: 33px;
     border-radius: 0;
     border: 1px solid #CD06FF;
+    transition: 1s;
 }
 
 
@@ -221,7 +222,7 @@ justify-content: flex-end;
     height: 60px;
     background: #FFFFFF;
     border-radius: 10px;
-    color:#6C0287;
+    color:var(--bright-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 22px;
@@ -232,12 +233,12 @@ justify-content: flex-end;
 .booking__form-button button:hover{
     
     background: #EADEED;
-    border: 3px solid #6C0287;  
+    border: 3px solid var(--bright-color);  
 }
 
 .booking__form-button button:focus{
     background: #FFFFFF;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--bright-color);
 
 }
 

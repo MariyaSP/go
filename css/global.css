@@ -22,13 +22,13 @@ img{
 
 button{
     cursor: pointer; 
-    transition-duration: 2s;
+    transition-duration: .2s;
 }
 
 a{
     cursor: inherit;
     text-decoration: none;
-    transition-duration: 2s;
+    transition: color .2s;
 }
 
 ul{

@@ -1,3 +1,4 @@
+@import url("var.css");
 @import url("question.css");
 @import url("wehave.css");
 @import url("nav.css");
@@ -127,7 +128,7 @@ list-style: none;
     margin-bottom: 38px;
 }
 .about__citat::before {
-    color: #6C0287;
+    color: var(--bright-color);
     content: '\201c';
     top: -16px;
     left: 6px;
@@ -137,7 +138,7 @@ list-style: none;
 }
 
 .about__citat::after {
-    color: #6C0287;
+    color: var(--bright-color);
     content: '\201d';
     bottom: 6px;
     right: 125px;
@@ -150,7 +151,7 @@ list-style: none;
 span{
     font-weight: 900;
     font-size: 44px;
-    color: #6C0287;
+    color: var(--bright-color);
 }
 
 .about__boss{
@@ -216,6 +217,7 @@ span{
 }
 
 
+
 .contacts__social-icon{
     width: 280px;
     display: flex;
@@ -239,18 +241,18 @@ span{
 
 
 .contacts__social-icon-item:hover{
-    fill: #EADEED;
+    fill: #d2b2da;
 
 }
 
 .contacts__social-icon-item:focus{
     outline: none;
-    fill: #EADEED;
-    border: 1px solid #CD06FF;
+    fill: #d2b2da;
+    border: 1px solid var(--light-magenta);
 }
 
 .contacts__social-icon-item:active{
-    fill: #CD06FF;
+    fill: var(--light-magenta);
 }
 
 
@@ -280,6 +282,15 @@ span{
     flex-direction: column;
     align-items: flex-end;
     gap: 6px;
+    
+}
+
+.contacts__author div, .contacts__item-active{
+    transition: color .2s;
+}
+
+.contacts__author div:hover, .contacts__item-active:hover {
+    color: var(--light-magenta);
 }
 .banner__container {
     /* background: url('../img/man.png') no-repeat bottom right; */

@@ -61,7 +61,7 @@
     line-height: 106px;
     line-height: 141px;
     font-variant: small-caps;
-    color: #CD06FF;
+    color: var(--light-magenta);
 }
 
 .banner__promo-big{
@@ -69,14 +69,14 @@
     font-size: 75px;
     line-height: 106px;
     font-variant: small-caps;
-    color: #CD06FF;
+    color: var(--light-magenta);
     
 }
 .banner__promo-btn{
     position: relative;
     width: 374px;
     height: 80px;
-    background: #6C0287;
+    background: var(--bright-color);
 
     border-radius: 10px;
     padding: 25px 69px;
@@ -107,7 +107,7 @@
     z-index: -1;
     width: 374px;
     height: 80px;
-    background: #6C0287;
+    background: var(--bright-color);
     border-radius: 10px;
     border: 0; 
     filter: blur(10px);
