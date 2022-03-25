@@ -88,14 +88,14 @@
 }
 
 .banner__promo-btn:hover{
-    background: #840AA3;
+    background: var(--banner-light);
 }
 .banner__promo-btn:focus{
-    background: #640AA3;;
+    background: var(--color-focus);
 }
 
 .banner__promo-btn:active{
-    background: #840AA3;
+    background: var(--banner-light);
 }
 
 .banner__promo-btn::after{

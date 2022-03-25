@@ -10,7 +10,7 @@
     text-align: center;
 }
 .booking{
-    background-color: #440F51;
+    background-color: var(--background-form);
 }
 
 .booking{
@@ -82,7 +82,7 @@
 /* Hover */
 .booking__form-radiobtn label:hover {
 	background: #EADEED;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--color-focus);
 }
 /* Disabled */
 /* .booking__form-radiobtn input[type=radio]:disabled + label {
@@ -92,7 +92,7 @@
 
 .booking__form-radiobtn label:focus {
     background: #FFFFFF;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--color-focus);
 }
 
 .booking__form-choose{
@@ -153,7 +153,7 @@
     width: 33px;
     height: 33px;
     border-radius: 0;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--light-magenta);
     transition: 1s;
 }
 
@@ -248,5 +248,5 @@ justify-content: flex-end;
 }
 
 .booking__form-book input:focus{
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--light-magenta);
 }

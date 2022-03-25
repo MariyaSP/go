@@ -43,6 +43,6 @@ nav button:hover, nav button:focus{
 }
 
 nav button:active{
-    background: #640AA3;
-    border: 3px solid #640AA3;
+    background: var(--color-focus);
+    border: 3px solid var(--color-focus);
 }
