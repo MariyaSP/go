@@ -4,14 +4,7 @@
 @import url("nav.css");
 @import url("banner.css");
 @import url("booking.css");
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
+@import url("modal.css");
 
 body {
     background-color: #1B1A1B;

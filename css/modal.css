@@ -1,0 +1,128 @@
+.overlay {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    background: rgba(27, 26, 27, 0.7);
+}
+
+.active{
+    display: block;
+}
+.overlay__modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    /* transform: rotate(45deg) */
+}
+
+.modal__close:hover {
+    opacity: .6;
+}
+
+.modal__close:active {
+    opacity: .9;
+}
+
+.modal__call{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 498px;
+    background: #440F51;
+}
+
+.modal__title{
+    margin: 60px auto 40px auto;
+    text-align: center;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.modal__form{
+    margin: 0 auto;
+    width: 300px;
+}
+.modal__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+    }
+
+.modal__text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.modal__input {
+    display: block;
+    width: 280px;
+    height: 52px;
+    background-color: #ffffff;
+    border: none;
+
+}
+
+.modal__input:focus {
+    outline: 2px solid #6E6893;
+}
+
+.modal__submit{
+    position: relative;
+    width: 100%;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+    padding: 16px 50px;
+}
+.modal__submit::after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    filter: blur(10px);
+}
+

@@ -1,6 +1,4 @@
 .question {
-    background-color: #fff;
-    color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
@@ -8,12 +6,25 @@
     list-style-type: none;
     position: relative;
     transition-duration: .2s;
+}
+
+.question-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-bottom: 10px;
 }
 
+.question-answer{
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+}
+
+.question-active{
+
+    height: auto;
+}
 .question > p{
     color: #1C1A1A;
     font-weight: 700;
@@ -22,16 +33,25 @@
 
 .question:nth-child(even) {
     background-color: #440F51;
-    
-
+    color: #fff;
 }
+
+.question:nth-child(odd) {
+    background-color: #fff;
+}
+
+.question:nth-child(odd) > .question-answer p, 
+.question:nth-child(odd) > .question-header p {
+    color: #000 ;
+}
+
 
 .question:nth-child(even) > p{
     color: #fff;
 }
 
 /* icon */
-.question > span {
+.question-header > span {
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -39,7 +59,7 @@
     transition: all .4s ease;
 }
 
-.question > span:before{
+.question-header > span:before{
     content: "";
     width: 20px;
     height: 1px;
@@ -50,7 +70,7 @@
 
 }
 
-.question > span:after{
+.question-header > span:after{
     content: "";
     width: 1px;
     height: 20px;
@@ -60,74 +80,69 @@
     transform: translate(-50%, -50%);
 }
 
-.question > span:before, .question > span:after{
+.question-header > span:before, .question-header > span:after{
     transition: all .4s ease;
 }
 /*  */
 
 /* even */
-.question:nth-child(even) > span {
+.question:nth-child(even) > .question-header span {
     border: 2px solid #fff;
 }
 
-.question:nth-child(even):hover > span {
+.question:nth-child(even):hover > .question-header span {
     background: #fff;
 }
 
-.question:nth-child(even) > span:after, .question:nth-child(even) > span:before{
+.question:nth-child(even) > .question-header span:after, .question:nth-child(even) > .question-header span:before{
     background-color: #fff;
 }
 
-.question:nth-child(even):hover > span:after, .question:nth-child(even):hover > span:before{
+.question:nth-child(even):hover > .question-header span:after, .question:nth-child(even):hover > .question-header span:before{
     background-color: var(--bright-color);
 }
 
-.question:nth-child(even):active > span {
+.question:nth-child(even):active > .question-header span {
     background: transparent;
 }
 
-.question:nth-child(even):active > span:after{
+.question:nth-child(even):active > .question-header span:after{
     width: 0px;
 }
 
-.question:nth-child(even):active > span:before{
+.question:nth-child(even):active > .question-header span:before{
     background-color: #fff;
 }
 /*  */
 
 /* odd */
-.question:nth-child(odd) > span {
+.question:nth-child(odd) > .question-header span {
     border: 2px solid var(--bright-color);
 }
 
-.question:nth-child(odd):hover > span {
+.question:nth-child(odd):hover > .question-header span {
     background: var(--bright-color);
 }
 
-.question:nth-child(odd) > span:after, .question:nth-child(odd) > span:before{
+.question:nth-child(odd) > .question-header span:after, .question:nth-child(odd) > .question-header span:before{
     background-color: var(--bright-color);
 }
 
-.question:nth-child(odd):hover > span:after, .question:nth-child(odd):hover > span:before{
+.question:nth-child(odd):hover > .question-header span:after, .question:nth-child(odd):hover > .question-header span:before{
     background-color: #fff;
 }
 
-.question:nth-child(odd):active > span {
+.question:nth-child(odd):active > .question-header span {
     background: transparent;
 }
 
-.question:nth-child(odd):active > span:after{
+.question:nth-child(odd):active > .question-header span:after{
     width: 0px;
 }
 
-.question:nth-child(odd):active > span:before{
+.question:nth-child(odd):active > .question-header span:before{
     background-color: var(--bright-color);
 }
-
-
-
-
-
 
 .question:nth-last-child(1){
     margin-bottom: 0;

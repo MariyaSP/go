@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <li><a class="nav__item" href="#reviews"> отзывы </a></li>
                 <li><a class="nav__item" href="#conacts"> контакты </a></li>
             </ul>
-            <button>заказать звонок</button>
+            <button class = "btn__call">заказать звонок</button>
         </nav>
         <section class="banner">
             <div class="container banner__container">
@@ -302,25 +302,53 @@
                 <h2>Частые вопросы</h2>
                 <ul>
                     <li class="question">
-                        <p>Вопрос 1</p> 
-                        <span></span>
+                        <div class="question-header">
+                            <p>Вопрос 1</p> 
+                            <span class="question-btn"></span>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde accusamus perspiciatis laudantium error id. Amet fugiat provident aliquid labore officiis.
+                            </p>
+                        </div>   
                     </li>
                     <li class="question">
-                        <p>Вопрос 2</p> 
-                        <span></span>
+                        <div class="question-header">
+                            <p>Вопрос 1</p> 
+                            <span class="question-btn"></span>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde accusamus perspiciatis laudantium error id. Amet fugiat provident aliquid labore officiis.
+                            </p>
+                        </div>   
+
                     </li>
                     <li class="question">
-                        <p>Вопрос 3</p> 
-                        <span></span>
+                        <div class="question-header">
+                            <p>Вопрос 1</p> 
+                            <span class="question-btn"></span>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde accusamus perspiciatis laudantium error id. Amet fugiat provident aliquid labore officiis.
+                            </p>
+                        </div>   
+
                     </li>
                     <li class="question">
-                        <p>Вопрос 4</p> 
-                        <span></span>
+                        <div class="question-header">
+                            <p>Вопрос 1</p> 
+                            <span class="question-btn"></span>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde accusamus perspiciatis laudantium error id. Amet fugiat provident aliquid labore officiis.
+                            </p>
+                        </div>   
+
                     </li>
-                    <li class="question">
-                        <p>Вопрос 5</p> 
-                        <span></span>
-                    </li>
+
                 </ul>
             </div>
         </section>
@@ -391,7 +419,30 @@
                 
             </div>
         </section>
-        <div class="modal"></div>
+        <div class="overlay">
+            <div class="overlay__modal">
+                <div class="modal__call">
+                    <button class="modal__close">
+                        <img src="img/icons/close.svg" alt="close" >
+                    </button>
+                    <h3 class="modal__title">заказать звонок</h3>
+    
+                    <form class="modal__form" action="">
+                    <label class="modal__label" for="name">
+                        <span class="modal__text">Имя</span>
+                        <input class="modal__input" type="text" name="name" id="name" required>
+                    </label>
+                    <label class="modal__label" for="phone">
+                        <span class="modal__text">Телефон</span>
+                        <input class="modal__input" type="text" name="phone" id="phone" required>
+                    </label>
+                    <button class="modal__submit" type="submit">Позвонить мне</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
 </body>
 
 </html>
