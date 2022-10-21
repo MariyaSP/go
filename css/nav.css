@@ -1,0 +1,141 @@
+nav {
+    max-width: 1180px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+
+}
+
+nav svg{
+    display: none;
+}
+
+.burger__menu{
+    border: none;
+    background: none;
+    width: 58px;
+    height: 58px;
+    padding: 3px;
+}
+
+.burger__menu:focus{
+
+    outline: none;
+}
+
+.burger__menu:hover > svg rect{
+    fill: var(--light-magenta);
+}
+
+.burger__menu:focus > svg rect{
+    fill: var(--banner-light);
+}
+
+.burger__menu:focus {
+    border: 1px solid var(--banner-light);
+}
+
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__item {
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav__item:hover{
+    color: var(--light-magenta);
+
+}
+
+.button__order{
+    width: 280px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid var(--light-magenta);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.button__order:hover, .button__order:focus{
+    background: var(--bright-color);
+    border: 3px solid var(--bright-color);
+}
+
+.button__order:active{
+    background: var(--color-focus);
+    border: 3px solid var(--color-focus);
+}
+
+@media(max-width:1124px){
+
+
+    
+    nav img{
+        width: 87px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .nav__item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .button__order{
+        width: 229px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 8px;
+    }
+    
+}
+
+@media(max-width:950px){
+
+nav{
+    width: 688px;
+}
+    nav svg{
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+@media(max-width:420px){
+
+    nav{
+        padding-bottom: 10px;
+    }
+    .button__order{
+    display: none;
+    }
+
+    nav svg{
+        width: 39px;
+    }
+
+    nav img{
+        width: 66px;
+    }
+}

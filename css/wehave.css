@@ -1,0 +1,137 @@
+
+* {
+    transform: none;
+}
+
+
+.we-have__galery{
+    width: 100%;
+}
+
+.we-have__item{
+    display: block;
+    flex-basis: 380px;
+    height: 228px;
+    padding: 166px 40px 66px 40px;
+    transition-duration: 0.5s ;
+    
+}
+
+.we-have__item:hover{
+    transform: scale(1.1);
+}
+.we-have__item-1{
+background: url('../img/we_have/Rectangle\ 29.jpg');
+}
+.we-have__item-2{
+background: url('../img/we_have/Rectangle\ 30.jpg');
+}
+.we-have__item-3{
+background: url('../img/we_have/Rectangle\ 31.jpg');
+}
+.we-have__item-4{
+background: url('../img/we_have/Rectangle\ 32.jpg');
+}
+.we-have__item-5{
+background: url('../img/we_have/Rectangle\ 33.jpg');
+}
+.we-have__item-6{
+background: url('../img/we_have/Rectangle\ 34.jpg');
+}
+
+.we-have__item-translate{
+    transform: translate(0px, 70px);
+}
+.we-have__list{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 20px;
+}
+
+.we-have__text{
+    width: 300px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+@media(max-width: 1200px){
+    .we-have__item{
+        max-width: 287px;
+        height: 172px;
+        flex-basis: unset;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .we-have__list{
+        gap: 30px 22px;
+    }
+
+    .we-have__text{
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+        padding: 20px;
+        
+        
+    }
+}
+
+@media(max-width: 1000px){
+
+    .we-have__item-translate{
+        transform: unset;
+    }
+
+    .we-have__list{
+    justify-content: center;
+    }
+
+    .we-have__item{
+        max-width: 334px;
+        width: 334px;
+        height: 200px;
+
+    }
+}
+
+@media(max-width: 768px){
+    
+    .we-have__item{
+        max-width: 237px;
+        height: 144px;
+
+    }
+
+    .we-have__text{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width: 420px){
+    
+    .we-have__item{
+        max-width: 135px;
+        height: 75px;
+        align-items: center;
+
+    }
+
+    .we-have__text{
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .we-have__list{
+        gap: 10px;
+    }
+}
+

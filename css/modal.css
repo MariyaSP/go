@@ -1,0 +1,164 @@
+.overlay {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    background: rgba(27, 26, 27, 0.7);
+    z-index: 100;
+}
+
+.modal__win{
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 600px;
+    
+    background-color: #440F51;
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 15px;
+    font-family: 'Arial';
+}
+
+.active{
+    display: flex;
+}
+
+.modal__win svg{
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.modal__win svg>rect{
+    fill: #fff;
+}
+
+.modal__close {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    /* transform: rotate(45deg) */
+}
+
+.modal__close:hover {
+    opacity: .6;
+}
+
+.modal__close:active {
+    opacity: .9;
+}
+
+.modal__win-input{
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    width: 280px;
+    margin-bottom: 40px;
+}
+
+.modal__win-input input{
+    height: 52px;
+}
+
+.modal__win-input label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.modal__win-form{
+    text-align: center;
+}
+.modal__win-header{
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.modal__win-btn{
+    position: relative;
+    width: 300px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--bright-color);
+    padding: 16px 50px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.modal__win-btn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    filter: blur(10px);
+}
+
+
+
+@media(max-width:320px){
+    .modal__win{
+        top: 20px;
+        left: 5%;
+        z-index: 1;
+        padding: 15px;
+        font-family: 'Arial';
+        width: 280px;
+    }
+
+    .modal__win svg{
+        width:  30px;
+        height: 30px;
+    }
+    .modal__win-header{
+        font-size: 20px;
+    }
+
+    .modal__win-btn{
+        width: 240px;
+        height: 52px;
+        padding: 12px 41px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .modal__win-btn::after{
+        width: 240px;
+        height: 52px;
+    }
+    .modal__win-input{
+
+        width: 220px;
+        margin-bottom: 40px;
+    }
+}
