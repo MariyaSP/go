@@ -19,11 +19,11 @@
     gap: 10px;
     margin: 0 auto;
     width: 600px;
-    
+
     background-color: #440F51;
     position: absolute;
     left: 50%;
-    top: 7%;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 15px;
@@ -64,7 +64,7 @@
 
 .modal__win-input{
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     width: 280px;
     margin-bottom: 40px;
@@ -151,7 +151,7 @@
         font-size: 18px;
         line-height: 28px;
     }
-    
+
     .modal__win-btn::after{
         width: 240px;
         height: 52px;

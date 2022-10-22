@@ -1,5 +1,5 @@
 .contecst__menu{
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1;
     top: 107px;
@@ -21,8 +21,19 @@
     text-align: center;
     width: 100%;
     margin-bottom: 15px;
-    
+
 }
+.overlay__menu{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+        z-index: 100;
+    }
 
 .active__burger{
     display: block;
@@ -32,7 +43,7 @@
     width: 100%;
 }
 
-.contecst__menu button{        
+.contecst__menu button{
     display: none;
 }
 
@@ -67,7 +78,7 @@
     .contecst__menu{
 
         margin: 0 auto;
-        width: 280px;
+        /* width: 280px; */
         font-size: 14px;
         line-height: 22px;
         padding: 26px 0;
@@ -96,7 +107,7 @@
     .contecst__menu button:focus{
         background: var(--color-focus);
     }
-    
+
     .contecst__menu button:active{
         background: var(--banner-light);
     }
